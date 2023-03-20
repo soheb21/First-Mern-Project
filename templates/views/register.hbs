@@ -1,0 +1,48 @@
+{{>header}}
+{{>navbar}}
+<div class="container my-4">
+    <form class="row g-3" action="/register" method="post">
+    <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">First Name</label>
+    <input type="text" class="form-control" id="inputEmail4" name="firstname">
+  </div>
+     <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Last Name</label>
+    <input type="text" class="form-control" id="inputEmail4" name="lastname">
+  </div>
+  <div class="col-md-12">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail4" name="email">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Password</label>
+    <input type="password" class="form-control" id="inputPassword4" name="password">
+  </div>
+ 
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">confirm Password</label>
+    <input type="password" class="form-control" id="inputCity" name="cn_password">
+  </div>
+  <div class="col-md-6">
+    <label for="inputState" class="form-label">Your Phone</label>
+    <input type="text" minlength="10" maxlength="10" class="form-control" id="inputCity" name="phn_no">
+  </div>
+  <div class="col-md-6">
+    <label for="inputZip" class="form-label">Your Age</label>
+    <input type="number" class="form-control" id="inputZip" name="age">
+  </div>
+   <div class="row my-3">
+    <div class="form-check col-md-2">
+        <input class="form-check-input" type="radio"  name="gender" value="male" checked>
+        <span>Male</span>
+      </div>
+        <div class="form-check col-md-2">
+        <input class="form-check-input" type="radio"  name="gender" value="female" checked>
+        <span>Female</span>
+      </div>
+   </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary" value="Register">Register</button>
+  </div>
+</form>
+</div>
